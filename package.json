@@ -6,7 +6,12 @@
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
   }
   
-  "presets": ["react-app"],
-  "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+    "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
+  },
+  "babel": {
+    "presets": ["react-app"],
+    "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+  }
 
 }
