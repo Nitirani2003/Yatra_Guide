@@ -5,4 +5,8 @@
     "start": "node Server/index.js",
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
   }
+  
+  "presets": ["react-app"],
+  "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+
 }
