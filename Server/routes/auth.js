@@ -2,7 +2,7 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const multer = require('multer');
-
+JWT_SECRET = '123niti';
 const User = require("../models/User");
 
 /* Configuration Multer from file upload*/
